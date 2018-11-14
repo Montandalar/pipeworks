@@ -4,9 +4,9 @@ pipeworks.register_tube("pipeworks:tube", "Pneumatic tube segment")
 minetest.register_craft( {
 	output = "pipeworks:tube_1 6",
 	recipe = {
-	        { "basic_materials:plastic_sheet", "basic_materials:plastic_sheet", "basic_materials:plastic_sheet" },
+	        { "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" },
 	        { "", "", "" },
-	        { "basic_materials:plastic_sheet", "basic_materials:plastic_sheet", "basic_materials:plastic_sheet" }
+	        { "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" }
 	},
 })
 
@@ -82,9 +82,9 @@ if pipeworks.enable_priority_tube then
 	minetest.register_craft( {
 		output = "pipeworks:priority_tube_1 6",
 		recipe = {
-			{ "basic_materials:plastic_sheet", "basic_materials:plastic_sheet", "basic_materials:plastic_sheet" },
+			{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" },
 			{ "default:gold_ingot", "", "default:gold_ingot" },
-			{ "basic_materials:plastic_sheet", "basic_materials:plastic_sheet", "basic_materials:plastic_sheet" }
+			{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" }
 		},
 	})
 end
@@ -107,9 +107,9 @@ if pipeworks.enable_accelerator_tube then
 	minetest.register_craft( {
 		output = "pipeworks:accelerator_tube_1 2",
 		recipe = {
-			{ "basic_materials:plastic_sheet", "basic_materials:plastic_sheet", "basic_materials:plastic_sheet" },
+			{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" },
 			{ "default:mese_crystal_fragment", "default:steel_ingot", "default:mese_crystal_fragment" },
-			{ "basic_materials:plastic_sheet", "basic_materials:plastic_sheet", "basic_materials:plastic_sheet" }
+			{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" }
 		},
 	})
 end
@@ -161,14 +161,13 @@ if pipeworks.enable_one_way_tube then
 		},
 		after_place_node = pipeworks.after_place,
 		after_dig_node = pipeworks.after_dig,
-		on_rotate = pipeworks.on_rotate,
 	})
 	minetest.register_craft({
 		output = "pipeworks:one_way_tube 2",
 		recipe = {
-			{ "basic_materials:plastic_sheet", "basic_materials:plastic_sheet", "basic_materials:plastic_sheet" },
-			{ "group:stick", "default:mese_crystal", "basic_materials:plastic_sheet" },
-			{ "basic_materials:plastic_sheet", "basic_materials:plastic_sheet", "basic_materials:plastic_sheet" }
+			{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" },
+			{ "group:stick", "default:mese_crystal", "homedecor:plastic_sheeting" },
+			{ "homedecor:plastic_sheeting", "homedecor:plastic_sheeting", "homedecor:plastic_sheeting" }
 		},
 	})
 end
